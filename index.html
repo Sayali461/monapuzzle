@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monalisa Puzzels</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="puzzels.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;font-family: forte;">MONALISA PUZZLES</h1>
+    <div class="container">
+        <div class="row" id="borad">
+            <div class="col-lg-4">
+                <div>
+                    <img src="images/1.jpg" id="img1" alt="" draggable="true">
+                    <img src="images/2.jpg" id="img2" alt="" draggable="true">
+                    <img src="images/3.jpg" id="img3" alt="">
+                </div>
+                <div class="mt-1">
+                    <img src="images/4.jpg" id="img4" alt="">
+                    <img src="images/5.jpg" id="img5" alt="">
+                    <img src="images/6.jpg" id="img6" alt="">
+                </div>
+                <div class="mt-1">
+                    <img src="images/7.jpg" id="img7" alt="">
+                    <img src="images/8.jpg" id="img8" alt="">
+                    <img src="images/9.jpg" id="img9" alt="">
+                </div>
+                <div class="mt-1">
+                    <img src="images/10.jpg" id="img10" alt="">
+                    <img src="images/11.jpg" id="img11" alt="">
+                    <img src="images/12.jpg" id="img12" alt="">
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <table style="margin-left:60px">
+                    <tr>
+                        <td></td>
+                        <td><i class="fa fa-chevron-circle-up" aria-hidden="true" style="font-size:70px;color:blue"
+                                onclick="move('up')"></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-chevron-circle-left" aria-hidden="true" style="font-size:70px;color:blue"
+                                onclick="move('left')"></i></td>
+                        <td></td>
+                        <td><i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:70px;color:blue"
+                                onclick="move('right')"></i></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><i class="fa fa-chevron-circle-down" aria-hidden="true" style="font-size:70px;color:blue"
+                                onclick="move('down')"></i></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+                <br><br>
+                <div style="margin-left: 120px;">
+                    <button type="button" id="btnStart" class="btn-light" style="background-color: rgb(184, 184, 210);" onclick="start()">START</button>&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="btn-light" style="background-color:rgb(184, 184, 210) ;"onclick="stop()">STOP</button>
+                </div>
+                <br>
+                <h6 style="margin-left: 50px;">Time Spent:<span id="time"></span></h6>
+                <br>
+                <h6 style="margin-left: 50px;">Move Count:<span id="count"></span></h6>
+            </div>
+
+        
+        <div class="col-lg-4">
+            <img src="images/monalisa.jpg" alt="" style="width:320px;height:430px">
+
+        </div>
+
+    </div>
+    
+
+
+
+
+</body>
+
+</html>
